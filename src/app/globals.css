@@ -104,3 +104,21 @@ figcaption {
 	--clr-dark-grey: hsl(187, 24%, 22%);
 	--fs-body: 16px;
 }
+
+/* utility classes */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form,
+.form-input {
+	display: grid;
+}
+
+form > div,
+fieldset {
+	display: flex;
+}

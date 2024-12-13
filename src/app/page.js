@@ -1,7 +1,7 @@
 export default function Home() {
 	return (
 		<main>
-			<body>
+			<div>
 				<h1>Contact us</h1>
 				<form className='form-container' action='submit'>
 					<div>
@@ -19,7 +19,7 @@ export default function Home() {
 						<input type='email' name='email' id='email' />
 					</div>
 					<div>
-						<fieldset className='form-input'>
+						<fieldset>
 							<legend>Query type *</legend>
 							<div>
 								<input
@@ -44,25 +44,25 @@ export default function Home() {
 								</label>
 							</div>
 						</fieldset>
-						<div className='form-input'>
-							<label htmlFor='message'>Message *</label>
-							<textarea name='message' id='message'></textarea>
-						</div>
-						<div className='form-input'>
-							<input
-								type='checkbox'
-								required
-								name='terms'
-								value='agree'
-							/>
-							<label htmlFor='terms'>
-								I consent to being contacted by the team *
-							</label>
-						</div>
+					</div>
+					<div className='form-input'>
+						<label htmlFor='message'>Message *</label>
+						<textarea name='message' id='message'></textarea>
+					</div>
+					<div>
+						<input
+							type='checkbox'
+							required
+							name='terms'
+							value='agree'
+						/>
+						<label htmlFor='terms'>
+							I consent to being contacted by the team *
+						</label>
 					</div>
 					<button>Submit</button>
 				</form>
-			</body>
+			</div>
 		</main>
 	)
 }
