@@ -1,9 +1,9 @@
 export default function Home() {
 	return (
 		<main>
-			<div>
+			<div className='form-container'>
 				<h1>Contact us</h1>
-				<form className='form-container' action='submit'>
+				<form action='submit'>
 					<div>
 						<div className='form-input'>
 							<label htmlFor='name'>First name *</label>
@@ -49,7 +49,7 @@ export default function Home() {
 						<label htmlFor='message'>Message *</label>
 						<textarea name='message' id='message'></textarea>
 					</div>
-					<div>
+					<div className='form__checkbox'>
 						<input
 							type='checkbox'
 							required
